@@ -1,11 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="OPPConcepts.Backed.Date">
-    <Position X="5.25" Y="0.5" Width="2.5" />
+    <Position X="9.75" Y="5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAJAAAAAAEAAEAAAMAAAAAAACEMAAAAAAAAAA=</HashCode>
       <FileName>Date.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="OPPConcepts.Backed.Employee">
+    <Position X="10" Y="0.75" Width="2" />
+    <AssociationLine Name="BornDate" Type="OPPConcepts.Backed.Date" FixedToPoint="true">
+      <Path>
+        <Point X="11.062" Y="3.267" />
+        <Point X="11.062" Y="5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ABACAEAAAAAAAAAEEAAAAAAAACAAAAAIAAAAAAAAAAg=</HashCode>
+      <FileName>Employee.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BornDate" />
+      <Property Name="HireDate" />
+    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

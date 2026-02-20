@@ -24,5 +24,12 @@
       <Property Name="HireDate" />
     </ShowAsAssociation>
   </Class>
+  <Class Name="OPPConcepts.Backed.SalaryEmployee">
+    <Position X="13.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAACAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAQAAAA=</HashCode>
+      <FileName>SalaryEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

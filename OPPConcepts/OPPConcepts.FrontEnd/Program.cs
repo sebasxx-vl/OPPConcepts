@@ -1,7 +1,7 @@
 ﻿using OPPConcepts.Backed;
 try
 {
-    var employee1 = new SalaryEmployee(1, "Patrica", "Morales", new Date(2020, 4, 15),
+    var employee1 = new SalaryEmployee(1, "Patricia", "Morales", new Date(2020, 4, 15),
 new Date(1981, 1, 12), true, 2500000);
     var employee2 = new HourlyEmployee(2, "Ricardo", "Sanchez", new Date(2021, 12, 5),
    new Date(1971, 8, 11), true, 23000, 156);

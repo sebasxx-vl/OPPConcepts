@@ -23,12 +23,12 @@ public class CommisionEmployee : Employee
     public float CommisionPercentaje 
     { 
         get => _commisionPercentaje; 
-        set => _commisionPercentaje = value; 
+        set => _commisionPercentaje = ValidateCommisionPercentaje(value); 
     }
     public decimal Sales 
     { 
         get => _sales; 
-        set => _sales = value; 
+        set => _sales = ValidateSales(value); 
     }
 
     // Methods
@@ -36,4 +36,22 @@ public class CommisionEmployee : Employee
     public override string ToString() => base.ToString() + $"\n\t" + 
         $"Commision Percentaje: {CommisionPercentaje,20:P2}\n\t" + 
         $"Sales...............: {Sales,20:C2}";
+    
+    private float ValidateCommisionPercentaje(float commisionpercentaje)
+    {
+        if(commisionpercentaje < 0 || commisionpercentaje > 1)
+        {
+            throw new ArgumentOutOfRangeException(nameof(commisionpercentaje), "Commision percentaje must be between 0 and 1");
+        }
+        return commisionpercentaje;
+    }
+
+    private decimal ValidateSales(decimal sales)
+    {
+        if (sales < 0)
+        {
+            throw new ArgumentOutOfRangeException(nameof(sales), "Sales must be greater than than or equal 0");
+        }
+        return sales;
+    }
 }

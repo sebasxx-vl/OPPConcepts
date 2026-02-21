@@ -1,4 +1,5 @@
 ﻿using OPPConcepts.Backed;
+using System.ComponentModel.DataAnnotations;
 
 try
 {
@@ -12,8 +13,12 @@ try
     employees.Add(employee3);
     var employee4 = new HourlyEmployee(4040, "Kevin", "Rúa", true, new Date(1998, 8, 20), new Date(2012, 7, 17), 10000, 112);
     employees.Add(employee4);
+    var employee5 = new CommisionEmployee(5050, "Sofía", "Hincapié", true, new Date(1992, 6, 12), new Date(2018, 3, 15), 0.03f, 600000000);
+    employees.Add(employee5);
+    var employee6 = new CommisionEmployee(6060, "Juan", "Zuluaga", true, new Date(1985, 6, 16), new Date(2010, 9, 1), 0.03f, 120000000);
+    employees.Add(employee6);
 
-    foreach(var employee in employees)
+    foreach (var employee in employees)
     {
         Console.WriteLine(new string('-', 47));
         Console.WriteLine(employee);

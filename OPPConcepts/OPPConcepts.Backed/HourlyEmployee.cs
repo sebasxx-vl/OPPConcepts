@@ -35,8 +35,8 @@ public class HourlyEmployee : Employee
     public override decimal GetValueToPay() => (decimal)WorkingHours * HourlyValue;
 
     public override string ToString() => base.ToString() + $"\n\t" +
-        $"Hourly Value.....: {HourlyValue,20:C2}\n\t" +
-        $"Working Hours....: {WorkingHours,20:N2}";
+        $"Hourly Value........: {HourlyValue,20:C2}\n\t" +
+        $"Working Hours.......: {WorkingHours,20:N2}";
 
     private decimal ValidateHourlyValue(decimal hourlyValue)
     {

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace OPPConcepts.Backed;
-public abstract class Employee
+public abstract class Employee : IPay
 {
     // Constructors
     protected Employee(int id, string firstName, string lastName, bool isActive, Date bornDate, Date hireDate)
